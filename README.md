@@ -26,7 +26,7 @@ Welcome to the **Code Seekho** repository! This Android application, built using
 ## API References
 For database operations, the following APIs are used :
 
-Fetch Questions API: http://localhost/quiz/api/fetch_questions.php
+Fetch Questions API: http://localhost/quiz/api/fetch_questions.php <br>
 Create Question API: http://localhost/quiz/api/create_question.php
 
 ## Installation
