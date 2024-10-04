@@ -14,7 +14,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/login"
-        tools:layout_editor_absoluteX="-16dp" />
+        tools:layout_editor_absoluteX="-16dp"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="match_parent"

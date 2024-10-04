@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -17,7 +16,7 @@
             android:layout_margin="20dp"
             android:text="Code Seekho App"
             android:textColor="#23A129"
-            android:textSize="40dp"
+            android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -26,10 +25,10 @@
             android:id="@+id/txtQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:text="Ready  for the challenge?"
+            android:layout_marginTop="50dp"
+            android:text="Ready for the challenge?"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"/>
@@ -39,36 +38,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            app:layout_constraintStart_toStartOf="@+id/txtQuestion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtQuestion">
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:text=""/>
+                android:textSize="30sp"
+                android:text="Option 1"/>
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:text=""/>
+                android:textSize="30sp"
+                android:text="Option 2"/>
 
             <RadioButton
                 android:id="@+id/radio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:text=""/>
+                android:textSize="30sp"
+                android:text="Option 3"/>
 
             <RadioButton
                 android:id="@+id/radio4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:text=""/>
+                android:textSize="30sp"
+                android:text="Option 4"/>
         </RadioGroup>
 
         <Button
@@ -86,15 +86,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="20dp"
-            android:text="correct"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:textSize="20sp"
+            android:text="Score: 0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
         <Button
             android:id="@+id/buttonSIgnOut"
@@ -105,7 +103,6 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

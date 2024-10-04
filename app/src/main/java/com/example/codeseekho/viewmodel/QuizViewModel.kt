@@ -2,23 +2,21 @@ package com.example.codeseekho.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.codeseekho.model.QuestionsList
+import com.example.codeseekho.model.Question
 import com.example.codeseekho.repository.QuizRepository
 
 class QuizViewModel : ViewModel() {
 
-    var repository: QuizRepository = QuizRepository()
-    lateinit var questionsLiveData: LiveData<QuestionsList>
+    private val quizRepository = QuizRepository()
+    private lateinit var questionsLiveData: LiveData<List<Question>>
 
-
-    init {
-        questionsLiveData = repository.getQuestionsFromAPI()
+    // Function to fetch questions
+    fun fetchQuestions() {
+        questionsLiveData = quizRepository.getQuestionsFromAPI()
     }
 
-    fun getQuestionsFromLiveData():LiveData<QuestionsList>{
+    // Getter for LiveData
+    fun getQuestionsFromLiveData(): LiveData<List<Question>> {
         return questionsLiveData
     }
-
-
-
 }

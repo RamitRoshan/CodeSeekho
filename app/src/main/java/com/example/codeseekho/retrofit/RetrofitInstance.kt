@@ -3,12 +3,18 @@ package com.example.codeseekho.retrofit
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
-    val baseUrl = "http://192.168.1.21/quiz/"
+object RetrofitInstance {
+    private const val BASE_URL = "http://10.0.2.2/quiz/api/" // Ensure the trailing slash is present
 
-    fun getRetrofitInstance(): Retrofit{
-        return Retrofit.Builder().baseUrl(baseUrl)
+    private val retrofit: Retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
+    fun getQuestionsAPI(): QuestionsAPI {
+        return retrofit.create(QuestionsAPI::class.java)
+    }
 }
+

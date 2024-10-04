@@ -25,23 +25,23 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(view)
 
         // Load custom fade-in animation
-        val alphaAnimation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_in)
+        val alphaAnimation =
+            AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_fade_in)
 
         splashBinding.textViewSplash.startAnimation(alphaAnimation)
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(object : Runnable {
             override fun run() {
-                 val intent = Intent(this@WelcomeActivity,LoginActivity::class.java)
+                val intent = Intent(this@WelcomeActivity, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }
         }, 2000)
 
 
-
         // Apply animation to the main view
-      //  splashBinding.main.startAnimation(alphaAnimation)
+        //  splashBinding.main.startAnimation(alphaAnimation)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

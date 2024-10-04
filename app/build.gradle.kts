@@ -69,11 +69,11 @@ dependencies {
         implementation ("com.google.android.gms:play-services-auth:20.6.0")
 
     //Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1")
 
-    //coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     //Lifecycle
     val lifecycle_version = "2.8.6"
