@@ -22,10 +22,14 @@ Welcome to the **Code Seekho** repository! This Android application, built using
 - MVVM Architecture
 - Data Binding
 - Retrofit
-- XAMPP & phpMyAdmin (for backend)
+
+## API References
+For database operations, the following APIs are used :
+
+Fetch Questions API: http://localhost/quiz/api/fetch_questions.php
+Create Question API: http://localhost/quiz/api/create_question.php
 
 ## Installation
-
 1. Clone this repository:
    ```bash
    git clone https://github.com/RamitRoshan/CodeSeekho.git
